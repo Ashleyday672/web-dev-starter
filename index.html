@@ -6,13 +6,74 @@
   <title>Hello World!</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #f4f3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: rgb(255, 119, 164);
+      text-shadow: 2px 2px 5px #ff9f9f;
+      font-size: 3em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 1em;
+      margin: 10px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid #f797c2;
+      box-shadow: 0 5px 15px rgba(213, 36, 101, 0.84);
+    }
+
+    .button {
+      background-color: #d75072;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #9e204e;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>HTML Rocks!</h1>
-  <img src="img/compile.jpeg">
-  <script type="module" src="js/main.js"></script>
+  <h1>HTML Refresh Rocks!</h1>
+
+  <img src="Ashley.jpg">
+
+  <ul>
+    <li>Name: Ashley Day</li>
+    <li>Expected Graduation: May 2026</li>
+    <li>Currently doing web dev: No</li>
+    <li>Past Web Dev Job/Internship: No</li>
+  </ul>
+
+  <button class="button" onclick="sayHello()">Say Hello!</button>
+
+  <script>
+    function sayHello() {
+      alert("Hello and welcome, you clicked the button :)");
+    }
+  </script>
 </body>
 
 </html>
